@@ -3,8 +3,8 @@ class Solution {
         while (num >= 10) {
             int sum = 0;
             while (num > 0) {
-                sum += num % 10;
-                num /= 10;
+                sum += num % 10; //gets and adds last number
+                num /= 10;  //removes the last number from num to change last number to be added
             }
             num = sum;
         }
